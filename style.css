@@ -248,21 +248,28 @@ HEADER
 ==========================================*/
 
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    padding:18px 0;
+    background: rgba(17, 17, 17, 0.82);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 
-    background:rgba(17,17,17,.82);
+    border-bottom: 1px solid rgba(236,127,169,.18);
 
-    backdrop-filter:blur(20px);
+    z-index: 1000;
 
-    border-bottom:1px solid rgba(236,127,169,.18);
-
-    z-index:1000;
-
+    transition: all 0.3s ease;
+}
+header:hover{
+    background: rgba(17,17,17,0.95);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
 .nav-container{
@@ -512,47 +519,22 @@ HERO BUTTONS
 SOCIAL ICONS
 ==========================================*/
 
-.social-links{
-
-    display:flex;
-    gap:18px;
-    margin-top:15px;
-
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 25px;   /* Space between icons */
+    margin-top: 30px;
 }
 
-.social-links a{
-
-    width:55px;
-    height:55px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    border-radius:50%;
-
-    background:rgba(236,127,169,.08);
-
-    border:1px solid rgba(236,127,169,.18);
-
-    color:var(--primary);
-
-    font-size:20px;
-
-    transition:.35s;
-
+.social-icons a{
+    color: #ffffff;
+    font-size: 30px;
+    transition: 0.3s ease;
 }
 
-.social-links a:hover{
-
-    background:linear-gradient(135deg,#EC7FA9,#F8BBD0);
-
-    color:#111111;
-
-    transform:translateY(-8px) rotate(360deg);
-
-    box-shadow:0 15px 30px rgba(236,127,169,.35);
-
+.social-icons a:hover{
+    color: #3b82f6;
+    transform: translateY(-5px);
 }
 
 /*==========================================
